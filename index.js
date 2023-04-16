@@ -20,8 +20,8 @@ const model = [{
 
 const mainDiv = document.getElementById("Main");
 
-model.map((item, _index) =>{
-    const html = `<div id="Main">
+model.map((item,) =>{
+    const html = `
     <div class="conteiner1">
     <div class="left">
         <div class="left01">    
@@ -36,7 +36,7 @@ model.map((item, _index) =>{
         <div class="left03">${item.caption}</div>
         <div class="left04">
             <div class="infoBottom">
-                <button class="but">Java Script</button>
+                <button class="but">${item.topic}</button>
                 <div class="min">12 min read</div>
                 <div class="dot">·</div> 
                 <div class="select">Selected for you</div>
@@ -51,11 +51,21 @@ model.map((item, _index) =>{
         </div>
      </div>
      <img class="img1" src="./Img.png">
-     </div>
-     
-
-
-
-</div>`;
+     </div>`;
 mainDiv.innerHTML += html;
 });
+fetch('https://jsonplaceholder.typicode.com/todos')
+.then((response)=> response.json())
+.then(data=>console.log(data.splice(0,10)))
+.catch(e=>console.log(e))
+
+
+
+
+
+async function getElements (){
+    const response = await fetch(' https://api.nytimes.com/svc/topstories/v2/home.json?api-key=gD9IU2QvCP1RIM33ArbttgsdVz8WnPkl');
+    const resJson = await response.json();
+    console.log(resJson);
+}
+getElements();
