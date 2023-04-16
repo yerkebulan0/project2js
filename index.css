@@ -30,7 +30,7 @@ body {
     flex: none;
     order: 0;
     flex-grow: 0;
-    padding-bottom: 90px;
+    padding-bottom: 64px;
 }
 
 .img1 {
@@ -293,5 +293,7 @@ body {
 
 }
 #Main{
-    gap: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;  
 }
