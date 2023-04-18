@@ -43,12 +43,85 @@ body {
     display: flex;
     align-items: flex-start;
     gap: 100px;
-    padding-left: 160px;
+    padding: 0px 0px 36px;
     height: 310px;
-    width: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom:1px solid rgba(0, 0, 0, 0.2);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    width: 1120px;
+    box-sizing: border-box;
     
 
+}
+.menu2{
+    
+    
+    width: 100%;
+height: 18px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+
+color: #081E34;
+
+opacity: 0.5;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+    
+    
+    /* width: 100%;
+    gap: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #081E34;
+    opacity: 0.5;
+    justify-content: flex-end;
+    padding: 0px; */
+    
+
+
+}
+.last{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 32px;
+    width: 100%;
+    height: 100%;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    width: 1120px;
+   
+    padding: 0px 160px 42px 160px;
+}
+.nfac{
+    width: 100%;
+    /* height: 18px; */
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+    color: #081E34;
+    justify-content: flex-end;
+    color: #000000;
+
+    
 }
 
 .s1 {
@@ -61,6 +134,7 @@ body {
     flex: none;
     order: 1;
     flex-grow: 0;
+    width: 200px;
 }
 
 .s2 {
@@ -143,7 +217,7 @@ body {
     width: 24px;
     height: 24px;
 
-    background: url(image.png);
+    
 
 
     flex: none;
@@ -163,6 +237,7 @@ body {
     flex: none;
     order: 0;
     flex-grow: 0;
+    width: 693px;
 }
 
 .left03 {
@@ -296,4 +371,5 @@ body {
     display: flex;
     flex-direction: column;
     gap: 45px;  
-}
+    padding: 0px 160px;
+}   
