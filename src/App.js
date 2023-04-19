@@ -1,17 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import React from "react";
+import Header from "./header/header.js";
+import Block from "./block/block";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-     <p>Medium Alike</p> 
-         </header>
-         <p className='h'>Hello, world!</p>
-     </div>
-    
-     
-     
+    <div>
+      <Header />
+      <Block />
+    </div>
   );
 }
 
